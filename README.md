@@ -32,15 +32,15 @@ Database : Mysql
 
 ### Admin
 
-![Halaman Landing](img/ss-admin-1.jpg)
+![Halaman Admin](img/ss-admin-1.jpg)
 
-![Halaman Landing](img/ss-admin-2.jpg)
+![Halaman Admin](img/ss-admin-2.jpg)
 
-![Halaman Landing](img/ss-admin-3.jpg)
+![Halaman Admin](img/ss-admin-3.jpg)
 
-![Halaman Landing](img/ss-admin-4.jpg)
+![Halaman Admin](img/ss-admin-4.jpg)
 
-![Halaman Landing](img/ss-admin-5.jpg)
+![Halaman Admin](img/ss-admin-5.jpg)
 
 ## Prasyarat
 
