@@ -264,6 +264,23 @@
                             </div>
                         </div>
 
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="mu-latest-course-single">
+                                <figure class="mu-latest-course-img">
+                                    <a href="#"><img src="{{ asset('template-landing/assets/img/courses/2.jpg') }}" alt="img"></a>
+                                    <figcaption class="mu-latest-course-imgcaption">
+                                        <a href="#">Kebidanan</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="mu-latest-course-single-content">
+                                    <h4><a href="#">D3 Kebidanan</a></h4>
+                                    <p>Jurusan KEBIDANAN adalah satu bidang ilmu yang mernpelajari keilmuan dan- seni yang mempersiapkan kehamilan, menolong persalinan. nifas dan menyusui, masa interval dan pengaturan kesuburan, klimakterium dan menopause, bayi baru lahir dan balita, fungsi-fungsi reproduksi manusia serta memberikan bantuan/dukungan pada perempuan, keluarga dan komunitasnya. </p>
+                                    <div class="mu-latest-course-single-contbottom">
+                                        <a class="mu-course-details" href="#">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
 
@@ -285,7 +302,7 @@
                     <!-- begain title -->
                     <div class="mu-title">
                         <h2>Dosen Pengajar</h2>
-                       </div>
+                    </div>
                     <!-- end title -->
                     <!-- begain our teacher content -->
                     <div class="mu-our-teacher-content">

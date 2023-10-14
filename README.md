@@ -10,6 +10,38 @@ Framework : Laravel, Boostrap
 
 Database : Mysql
 
+## Screenshot
+
+### Landing
+
+![Halaman Landing](img/ss-landing-1.jpg)
+
+![Halaman Landing](img/ss-landing-2.jpg)
+
+![Halaman Landing](img/ss-landing-3.jpg)
+
+![Halaman Landing](img/ss-landing-4.jpg)
+
+![Halaman Landing](img/ss-landing-5.jpg)
+
+![Halaman Landing](img/ss-landing-6.jpg)
+
+![Halaman Landing](img/ss-landing-7.jpg)
+
+![Halaman Landing](img/ss-landing-8.jpg)
+
+### Admin
+
+![Halaman Landing](img/ss-admin-1.jpg)
+
+![Halaman Landing](img/ss-admin-2.jpg)
+
+![Halaman Landing](img/ss-admin-3.jpg)
+
+![Halaman Landing](img/ss-admin-4.jpg)
+
+![Halaman Landing](img/ss-admin-5.jpg)
+
 ## Prasyarat
 
 Pastikan Anda telah menginstal [Laravel](https://laravel.com/) dan [Composer](https://getcomposer.org/) di sistem Anda sebelum menjalankan proyek ini.
