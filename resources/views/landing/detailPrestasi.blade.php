@@ -7,10 +7,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="mu-page-breadcrumb-area">
-                    <h2>Berita</h2>
+                    <h2>Prestasi</h2>
                     <ol class="breadcrumb">
                         <li><a href="/">Beranda</a></li>
-                        <li class="active">Berita</li>
+                        <li class="active">Prestasi</li>
                     </ol>
                 </div>
             </div>
@@ -31,9 +31,9 @@
                                     <div class="col-md-12">
                                         <article class="mu-blog-single-item">
                                             <figure class="mu-blog-single-img">
-                                                <a href="#"><img alt="img" src="{{asset('image/'.$data->cover)}}"></a>
+                                                <a href="#"><img alt="img" src="{{asset('lampiran/'.$data->lampiran)}}"></a>
                                                 <figcaption class="mu-blog-caption">
-                                                    <h3><a href="#">{{$data->judul}}</a></h3>
+                                                    <h3><a href="#">{{$data->nama}}</a></h3>
                                                 </figcaption>
                                             </figure>
                                             <div class="mu-blog-meta">
@@ -42,7 +42,7 @@
                                                 
                                             </div>
                                             <div class="mu-blog-description">
-                                            {!! $data->isi !!}
+                                            {{ $data->keterangan }}
                                             </div>
                                             <!-- start blog social share -->
                                             <div class="mu-blog-social">

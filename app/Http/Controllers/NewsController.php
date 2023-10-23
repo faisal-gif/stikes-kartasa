@@ -57,7 +57,7 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        //
+        return redirect()->route('landing.berita',$news->id);
     }
 
     /**

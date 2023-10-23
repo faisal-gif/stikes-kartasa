@@ -31,18 +31,17 @@
                                     <div class="col-md-12">
                                         <article class="mu-blog-single-item">
                                             <figure class="mu-blog-single-img">
-                                                <a href="#"><img alt="img" src="{{asset('image/'.$data->cover)}}"></a>
                                                 <figcaption class="mu-blog-caption">
-                                                    <h3><a href="#">{{$data->judul}}</a></h3>
+                                                    <h3><a href="#">Kalender Akademik</a></h3>
                                                 </figcaption>
                                             </figure>
                                             <div class="mu-blog-meta">
                                                 <a href="#">By Admin</a>
-                                                <a href="#">{{date('d mm Y', strtotime($data->created_at))}}</a>
+                                                <a href="#">23 Okt 2023</a>
                                                 
                                             </div>
                                             <div class="mu-blog-description">
-                                            {!! $data->isi !!}
+                                            <a href="{{asset('kalender/KALENDER_PENDIDIKAN.pdf')}}" class="btn btn-primary" style="color: white;">Download Kalender Akademik</a>
                                             </div>
                                             <!-- start blog social share -->
                                             <div class="mu-blog-social">

@@ -72,7 +72,7 @@
                 ['font', ['strikethrough', 'superscript', 'subscript']],
                 ['fontsize', ['fontsize']],
                 ['color', ['color']],
-                ['para', ['ul', 'ol', 'paragraph']],
+                ['para', [ 'ol', 'paragraph']],
                 ['height', ['height']]
             ]
         });

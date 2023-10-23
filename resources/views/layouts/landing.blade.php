@@ -36,7 +36,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    @yield('css')
 </head>
 
 <body>
@@ -100,25 +100,26 @@
                     </button>
                     <!-- LOGO -->
                     <!-- TEXT BASED LOGO -->
-                    <a class="navbar-brand" href="index.html"><i><img src="{{ asset('template-landing/assets/img/favicon.png')}}" alt="" srcset=""></i><span>STIKES Karya Putra Bangsa</span></a>
+                    <a class="navbar-brand" href="/"><i><img src="{{ asset('template-landing/assets/img/favicon.png')}}" alt="" srcset=""></i><span>STIKES Karya Putra Bangsa</span></a>
                     <!-- IMG BASED LOGO  -->
                     <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                        <li class="active"><a href="index.html">Beranda</a></li>
+                        <li class="active"><a href="/">Beranda</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/vis-misi">Visi dan Misi</a></li>
-                                <li><a href="course-detail.html">Prodi</a></li>
+                                <li><a href="#mu-latest-courses">Prodi</a></li>
+                                <li><a href="/prestasi">Prestasi</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik</a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="course.html">Kalender Akademik</a></li>
-                                <li><a href="course-detail.html">Jadwal Perkuliahan</a></li>
+                                <li><a href="/kalender-akademik">Kalender Akademik</a></li>
+                                <li><a href="/jadwal">Jadwal Perkuliahan</a></li>
                                 <li><a href="http://siakad.stikes-kartrasa.ac.id/pmb">Penerimaan Mahasiswa Baru</a></li>
                             </ul>
                         </li>
@@ -130,8 +131,28 @@
                                 <li><a href="http://siakad.stikes-kartrasa.ac.id/tracer/">Tracer Study</a></li>
                             </ul>
                         </li>
-                        <li><a href="gallery.html">Dosen</a></li>
+                        <li><a href="{{route('landing.dosen')}}">Dosen</a></li>
+                        @guest
+                        @if (Route::has('login'))
                         <li><a href="{{route('login')}}">Login</a></li>
+                        @endif
+                        @else
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{ Auth::user()->name }}</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li> <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
+
+                            </ul>
+                        </li>
+                        @endguest
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -171,7 +192,7 @@
                                     <li><a href="">Prodi</a></li>
                                     <li><a href="">Pendaftaran</a></li>
                                     <li><a href="">Map</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -179,11 +200,11 @@
                             <div class="mu-footer-widget">
                                 <h4>Student Help</h4>
                                 <ul>
-                                   
+
                                     <li><a href="#">Siakad</a></li>
                                     <li><a href="">Kalender Akademik</a></li>
                                     <li><a href="">Karir</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>

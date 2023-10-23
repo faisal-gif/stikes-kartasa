@@ -1,5 +1,15 @@
 @extends('layouts.landing')
 <!-- Start Slider -->
+@section('css')
+<style>
+    #foto {
+        width: 260px;
+        height: 265px;
+        object-fit: cover;
+    }
+</style>
+@endsection
+
 @section('content')
 <section id="mu-slider">
     <!-- Start single slider item -->
@@ -13,7 +23,6 @@
             <h4>STIKES Karya Putra Bangsa Tulungagung</h4>
             <span></span>
             <p>“Menghasilkan tenaga kesehatan berkualitas baik, berjiwa entrerpreneur di bidang teknologi kesehatan serta mampu bersaing dalam skala nasional”</p>
-            <a href="#" class="mu-read-more-btn">Read More</a>
         </div>
     </div>
     <!-- Start single slider item -->
@@ -52,22 +61,22 @@
                     <!-- Start single service -->
                     <div class="mu-service-single">
                         <span class="fa fa-book"></span>
-                        <h3>Learn Online</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
+                        <h3>Kurikulum Terbaik</h3>
+                        <p>Kampus Kami menghadirkan kurikulum terkini, yang dirancang untuk membekali mahasiswa dengan pengetahuan, keterampilan, dan pengalaman yang relevan dunia kerja modern.</p>
                     </div>
                     <!-- Start single service -->
                     <!-- Start single service -->
                     <div class="mu-service-single">
                         <span class="fa fa-users"></span>
-                        <h3>Expert Teachers</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
+                        <h3>Dosen Profesional</h3>
+                        <p>Kampus Kami memiliki dosen-dosen berkualitas di kampus kami, yang tidak hanya ahli dalam bidangnya tapi juga peduli terhadap perkembangan mahasiswa.</p>
                     </div>
                     <!-- Start single service -->
                     <!-- Start single service -->
                     <div class="mu-service-single">
                         <span class="fa fa-table"></span>
-                        <h3>Best Classrooms</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
+                        <h3>Fasilitas Terbaik</h3>
+                        <p>Kampus kami menawarkan beragam fasilitas modern yang dirancang untuk mendukung pengalaman belajar dan kehidupan mahasiswa Anda.</p>
                     </div>
                     <!-- Start single service -->
                 </div>
@@ -103,7 +112,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="mu-about-us-right">
-                                <a id="mu-abtus-video" href="#" target="mutube-video">
+                                <a href="#">
                                     <img src="{{ asset('template-landing/assets/img/counter-bg.jpg') }}" alt="img">
                                 </a>
                             </div>
@@ -184,25 +193,23 @@
                             <div class="col-lg-4 col-md-4  col-sm-6">
                                 <div class="mu-single-feature">
                                     <span class="fa fa-book"></span>
-                                    <h4>Professional Courses</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                    <a href="#">Read More</a>
+                                    <h4>Perpustakaan Modern</h4>
+                                    <p>Kampus dilengkapi dengan perpustakaan modern yang memiliki koleksi buku, jurnal, dan sumber daya digital terkini untuk mendukung riset dan pembelajaran mahasiswa.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="mu-single-feature">
                                     <span class="fa fa-users"></span>
-                                    <h4>Expert Teachers</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                    <a href="#">Read More</a>
+                                    <h4>Pusat Karir</h4>
+                                    <p>LPusat karir yang aktif membantu mahasiswa merencanakan karir mereka, memberikan pelatihan, seminar, dan sumber daya untuk membantu mereka mencapai kesuksesan di dunia kerja setelah lulus.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="mu-single-feature">
                                     <span class="fa fa-certificate"></span>
-                                    <h4>Professional Certificate</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                    <a href="#">Read More</a>
+                                    <h4>Laboratorium Canggih</h4>
+                                    <p>Fasilitas laboratorium yang lengkap dan canggih, memungkinkan mereka untuk melakukan eksperimen dan penelitian tingkat tinggi.</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -231,7 +238,7 @@
                         <div class="col-lg-4 col-md-4 col-xs-12">
                             <div class="mu-latest-course-single">
                                 <figure class="mu-latest-course-img">
-                                    <a href="#"><img src="{{ asset('template-landing/assets/img/courses/1.jpg') }}" alt="img"></a>
+                                    <a href="#"><img src="{{ asset('img-landing/farmasi.jpeg') }}" alt="img"></a>
                                     <figcaption class="mu-latest-course-imgcaption">
                                         <a href="#">Farmasi</a>
 
@@ -239,9 +246,9 @@
                                 </figure>
                                 <div class="mu-latest-course-single-content">
                                     <h4><a href="#">S1 Farmasi</a></h4>
-                                    <p>ilmu yang mempelajari segala seluk-beluk mengenai obat. Ilmu farmasi adalah terapan dari (sedikitnya) tiga bidang ilmu yaitu kedokteran, kimia, dan biologi. Ruang lingkup ilmu farmasi tak hanya berfokus pada bidang ilmu eksakta, melainkan juga pada bidang ilmu sosial seperti Manajemen Farmasi dan Farmakoekonomi.</p>
+                                    <p>ilmu yang mempelajari segala seluk-beluk mengenai obat. Ilmu farmasi adalah terapan dari (sedikitnya) tiga bidang ilmu yaitu kedokteran, kimia, dan biologi. Ruang lingkup ilmu farmasi tak hanya berfokus pada bidang ilmu eksakta, melainkan juga pada bidang ilmu sosial seperti Manajemen Farmasi dan Farmakoekonomi.</p><br>
                                     <div class="mu-latest-course-single-contbottom">
-                                        <a class="mu-course-details" href="#">Details</a>
+                                        <a class="mu-course-details" href="{{route('landing.farmasi')}}">Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -249,16 +256,16 @@
                         <div class="col-lg-4 col-md-4 col-xs-12">
                             <div class="mu-latest-course-single">
                                 <figure class="mu-latest-course-img">
-                                    <a href="#"><img src="{{ asset('template-landing/assets/img/courses/2.jpg') }}" alt="img"></a>
+                                    <a href="#"><img src="{{ asset('img-landing/tlm.jpg') }}" alt="img"></a>
                                     <figcaption class="mu-latest-course-imgcaption">
                                         <a href="#">Teknologi Laboratorium Medis</a>
                                     </figcaption>
                                 </figure>
                                 <div class="mu-latest-course-single-content">
                                     <h4><a href="#">D3 Teknologi Laboratorium Medis</a></h4>
-                                    <p>Teknologi Laboratorium Medis (TLM) adalah pelayanan laboratorium kesehatan untuk mengetahui keadaan tubuh seseorang terhadap kondisi suatu penyakit dengan cara melakukan analisis terhadap cairan dan jaringan tubuh manusia. </p>
+                                    <p>Teknologi Laboratorium Medis (TLM) adalah pelayanan laboratorium kesehatan untuk mengetahui keadaan tubuh seseorang terhadap kondisi suatu penyakit dengan cara melakukan analisis terhadap cairan dan jaringan tubuh manusia.</p><br><br>
                                     <div class="mu-latest-course-single-contbottom">
-                                        <a class="mu-course-details" href="#">Details</a>
+                                        <a class="mu-course-details" href="{{route('landing.tlm')}}">Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -267,16 +274,16 @@
                         <div class="col-lg-4 col-md-4 col-xs-12">
                             <div class="mu-latest-course-single">
                                 <figure class="mu-latest-course-img">
-                                    <a href="#"><img src="{{ asset('template-landing/assets/img/courses/2.jpg') }}" alt="img"></a>
+                                    <a href="#"><img src="{{ asset('img-landing/kebidanan.jpeg') }}" alt="img"></a>
                                     <figcaption class="mu-latest-course-imgcaption">
                                         <a href="#">Kebidanan</a>
                                     </figcaption>
                                 </figure>
                                 <div class="mu-latest-course-single-content">
                                     <h4><a href="#">D3 Kebidanan</a></h4>
-                                    <p>Jurusan KEBIDANAN adalah satu bidang ilmu yang mernpelajari keilmuan dan- seni yang mempersiapkan kehamilan, menolong persalinan. nifas dan menyusui, masa interval dan pengaturan kesuburan, klimakterium dan menopause, bayi baru lahir dan balita, fungsi-fungsi reproduksi manusia serta memberikan bantuan/dukungan pada perempuan, keluarga dan komunitasnya. </p>
+                                    <p>Jurusan KEBIDANAN adalah satu bidang ilmu yang mernpelajari keilmuan yang mempersiapkan kehamilan, menolong persalinan. nifas dan menyusui, masa interval dan pengaturan kesuburan, klimakterium dan menopause, bayi baru lahir dan balita, fungsi-fungsi reproduksi manusia serta memberikan bantuan/dukungan pada perempuan, keluarga.</p>
                                     <div class="mu-latest-course-single-contbottom">
-                                        <a class="mu-course-details" href="#">Details</a>
+                                        <a class="mu-course-details" href="{{route('landing.kebidanan')}}">Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -307,10 +314,11 @@
                     <!-- begain our teacher content -->
                     <div class="mu-our-teacher-content">
                         <div class="row">
+                        @foreach($dosen as $d)
                             <div class="col-lg-3 col-md-3  col-sm-6">
                                 <div class="mu-our-teacher-single">
                                     <figure class="mu-our-teacher-img">
-                                        <img src="{{ asset('template-landing/assets/img/teachers/teacher-01.png') }}" alt="teacher img">
+                                        <img id="foto" src="{{ asset('image_dosen/'. $d->img) }}" alt="teacher img">
                                         <div class="mu-our-teacher-social">
                                             <a href="#"><span class="fa fa-facebook"></span></a>
                                             <a href="#"><span class="fa fa-twitter"></span></a>
@@ -319,66 +327,15 @@
                                         </div>
                                     </figure>
                                     <div class="mu-ourteacher-single-content">
-                                        <h4>Brian Dean</h4>
-                                        <span>Math Teacher</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
+                                        <h4>{{$d->nama}}</h4>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6">
-                                <div class="mu-our-teacher-single">
-                                    <figure class="mu-our-teacher-img">
-                                        <img src="{{ asset('template-landing/assets/img/teachers/teacher-02.png') }}" alt="teacher img">
-                                        <div class="mu-our-teacher-social">
-                                            <a href="#"><span class="fa fa-facebook"></span></a>
-                                            <a href="#"><span class="fa fa-twitter"></span></a>
-                                            <a href="#"><span class="fa fa-linkedin"></span></a>
-                                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                                        </div>
-                                    </figure>
-                                    <div class="mu-ourteacher-single-content">
-                                        <h4>James Hein</h4>
-                                        <span>Physics Teacher</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6">
-                                <div class="mu-our-teacher-single">
-                                    <figure class="mu-our-teacher-img">
-                                        <img src="{{ asset('template-landing/assets/img/teachers/teacher-03.png') }}" alt="teacher img">
-                                        <div class="mu-our-teacher-social">
-                                            <a href="#"><span class="fa fa-facebook"></span></a>
-                                            <a href="#"><span class="fa fa-twitter"></span></a>
-                                            <a href="#"><span class="fa fa-linkedin"></span></a>
-                                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                                        </div>
-                                    </figure>
-                                    <div class="mu-ourteacher-single-content">
-                                        <h4>Rebeca Michel</h4>
-                                        <span>English Teacher</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6">
-                                <div class="mu-our-teacher-single">
-                                    <figure class="mu-our-teacher-img">
-                                        <img src="{{ asset('template-landing/assets/img/teachers/teacher-04.png') }}" alt="teacher img">
-                                        <div class="mu-our-teacher-social">
-                                            <a href="#"><span class="fa fa-facebook"></span></a>
-                                            <a href="#"><span class="fa fa-twitter"></span></a>
-                                            <a href="#"><span class="fa fa-linkedin"></span></a>
-                                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                                        </div>
-                                    </figure>
-                                    <div class="mu-ourteacher-single-content">
-                                        <h4>John Doe</h4>
-                                        <span>Biology Teacher</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
+                           
+                            
+                            
                         </div>
                     </div>
                     <!-- End our teacher content -->
@@ -389,68 +346,6 @@
 </section>
 <!-- End our teacher -->
 
-<!-- Start testimonial -->
-<section id="mu-testimonial">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="mu-testimonial-area">
-                    <div id="mu-testimonial-slide" class="mu-testimonial-content">
-                        <!-- start testimonial single item -->
-                        <div class="mu-testimonial-item">
-                            <div class="mu-testimonial-quote">
-                                <blockquote>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque id.</p>
-                                </blockquote>
-                            </div>
-                            <div class="mu-testimonial-img">
-                                <img src="{{ asset('template-landing/assets/img/testimonial-1.png') }}" alt="img">
-                            </div>
-                            <div class="mu-testimonial-info">
-                                <h4>John Doe</h4>
-                                <span>Happy Student</span>
-                            </div>
-                        </div>
-                        <!-- end testimonial single item -->
-                        <!-- start testimonial single item -->
-                        <div class="mu-testimonial-item">
-                            <div class="mu-testimonial-quote">
-                                <blockquote>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque id.</p>
-                                </blockquote>
-                            </div>
-                            <div class="mu-testimonial-img">
-                                <img src="{{ asset('template-landing/assets/img/testimonial-3.png') }}" alt="img">
-                            </div>
-                            <div class="mu-testimonial-info">
-                                <h4>Rebaca Michel</h4>
-                                <span>Happy Parent</span>
-                            </div>
-                        </div>
-                        <!-- end testimonial single item -->
-                        <!-- start testimonial single item -->
-                        <div class="mu-testimonial-item">
-                            <div class="mu-testimonial-quote">
-                                <blockquote>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque id.</p>
-                                </blockquote>
-                            </div>
-                            <div class="mu-testimonial-img">
-                                <img src="{{ asset('template-landing/assets/img/testimonial-2.png') }}" alt="img">
-                            </div>
-                            <div class="mu-testimonial-info">
-                                <h4>Stev Smith</h4>
-                                <span>Happy Student</span>
-                            </div>
-                        </div>
-                        <!-- end testimonial single item -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End testimonial -->
 
 <!-- Start from blog -->
 <section id="mu-from-blog">
@@ -466,63 +361,28 @@
                     <!-- start from blog content   -->
                     <div class="mu-from-blog-content">
                         <div class="row">
+                            @foreach($news as $berita)
                             <div class="col-md-4 col-sm-4">
                                 <article class="mu-blog-single-item">
                                     <figure class="mu-blog-single-img">
-                                        <a href="#"><img src="{{ asset('template-landing/assets/img/blog/blog-1.jpg') }}" alt="img"></a>
+                                        <a href="#"><img src="{{ asset('image/'.$berita->cover) }}" alt="img"></a>
                                         <figcaption class="mu-blog-caption">
-                                            <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
+                                            <h3><a href="#">{{$berita->judul}}</a></h3>
                                         </figcaption>
                                     </figure>
                                     <div class="mu-blog-meta">
                                         <a href="#">By Admin</a>
-                                        <a href="#">02 June 2016</a>
-                                        <span><i class="fa fa-comments-o"></i>87</span>
+                                        <a href="#">{{date('d M Y', strtotime($berita->created_at))}}</a>
+                                        <!-- <span><i class="fa fa-comments-o"></i>87</span> -->
                                     </div>
                                     <div class="mu-blog-description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum non voluptatum eum repellendus quod aliquid. Vitae, dolorum voluptate quis repudiandae eos molestiae dolores enim.</p>
-                                        <a class="mu-read-more-btn" href="#">Read More</a>
+                                        
+                                        <a class="mu-read-more-btn" href="{{route('landing.berita',$berita->id)}}">Read More</a>
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-md-4 col-sm-4">
-                                <article class="mu-blog-single-item">
-                                    <figure class="mu-blog-single-img">
-                                        <a href="#"><img src="{{ asset('template-landing/assets/img/blog/blog-2.jpg') }}" alt="img"></a>
-                                        <figcaption class="mu-blog-caption">
-                                            <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="mu-blog-meta">
-                                        <a href="#">By Admin</a>
-                                        <a href="#">02 June 2016</a>
-                                        <span><i class="fa fa-comments-o"></i>87</span>
-                                    </div>
-                                    <div class="mu-blog-description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum non voluptatum eum repellendus quod aliquid. Vitae, dolorum voluptate quis repudiandae eos molestiae dolores enim.</p>
-                                        <a class="mu-read-more-btn" href="#">Read More</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <article class="mu-blog-single-item">
-                                    <figure class="mu-blog-single-img">
-                                        <a href="#"><img src="{{ asset('template-landing/assets/img/blog/blog-3.jpg') }}" alt="img"></a>
-                                        <figcaption class="mu-blog-caption">
-                                            <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="mu-blog-meta">
-                                        <a href="#">By Admin</a>
-                                        <a href="#">02 June 2016</a>
-                                        <span><i class="fa fa-comments-o"></i>87</span>
-                                    </div>
-                                    <div class="mu-blog-description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum non voluptatum eum repellendus quod aliquid. Vitae, dolorum voluptate quis repudiandae eos molestiae dolores enim.</p>
-                                        <a class="mu-read-more-btn" href="#">Read More</a>
-                                    </div>
-                                </article>
-                            </div>
+                           @endforeach
+                            
                         </div>
                     </div>
                     <!-- end from blog content   -->

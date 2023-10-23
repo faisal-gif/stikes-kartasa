@@ -7,10 +7,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="mu-page-breadcrumb-area">
-                    <h2>Berita</h2>
+                    <h2>Kebidanan</h2>
                     <ol class="breadcrumb">
                         <li><a href="/">Beranda</a></li>
-                        <li class="active">Berita</li>
+                        <li class="active">Kebidanan</li>
                     </ol>
                 </div>
             </div>
@@ -31,18 +31,27 @@
                                     <div class="col-md-12">
                                         <article class="mu-blog-single-item">
                                             <figure class="mu-blog-single-img">
-                                                <a href="#"><img alt="img" src="{{asset('image/'.$data->cover)}}"></a>
+                                                <a href="#"><img alt="img" src="{{ asset('img-landing/kebidanan.jpeg') }}"></a>
                                                 <figcaption class="mu-blog-caption">
-                                                    <h3><a href="#">{{$data->judul}}</a></h3>
+                                                    <h3><a href="#">Kebidanan</a></h3>
                                                 </figcaption>
                                             </figure>
                                             <div class="mu-blog-meta">
                                                 <a href="#">By Admin</a>
-                                                <a href="#">{{date('d mm Y', strtotime($data->created_at))}}</a>
-                                                
+                                                <a href="#"></a>
+
                                             </div>
                                             <div class="mu-blog-description">
-                                            {!! $data->isi !!}
+                                                <h4>Apa itu Jurusan Kebidanan?</h4>
+                                                Jurusan Kebidanan (Midwifery) mempelajari tentang cara menangani ibu hamil dan bayi, mulai dari melakukan pemeriksaan kehamilan, memantau perkembangan janin di tiap fase, membantu dan memimpin persalinan, hingga memberikan asuhan dan merawat pasien pasca melahirkan. Di Jurusan Kebidanan, kamu juga akan diajarkan tentang bagaimana mensosialisasikan cara menjaga kesehatan sistem reproduksi, agar para calon ibu dapat mempersiapkan dan menjaga kondisi fisiknya saat hamil.
+                                                <br>
+                                                Semua ilmu tentang kebidanan akan kamu dalami di jurusan ini. Sebab dalam praktiknya, seorang Bidan memiliki peran penting dalam menjaga keselamatan dan kesehatan ibu dan bayi. Bahkan pasca melahirkan pun, Bidan bertugas untuk memberi pengetahuan tentang cara merawat bayi pasca lahir, proses menyusui, mengawasi tumbuh kembang anak, hingga mensosialisasikan program Keluarga Berencana (KB) kepada pasien.
+                                                <br>
+                                                <h4>Mata Kuliah Jurusan Kebidanan</h4>
+                                                Setelah membaca penjelasan tentang Jurusan Kebidanan di atas, sudah ada bayangan dong tentang apa saja yang akan dipelajari saat kuliah nanti?
+                                                <br>
+                                                Seorang bidan diharapkan dapat menjadi pemrakarsa dalam menyelesaikan masalah kesehatan ibu dan anak di masyarakat. Maka ketika menempuh pendidikan, mahasiswa akan bertemu dengan mata kuliah yang akan mengajarkan tentang peran bidan, lingkup praktik, prosedur persalinan, hingga penanganan kasus kompleks yang akan ditemukan saat berada di lapangan. Pada semester akhir, mahasiswa juga akan diberi kesempatan untuk mengaplikasikan ilmunya dengan Kuliah Kerja Nyata (KKN).
+
                                             </div>
                                             <!-- start blog social share -->
                                             <div class="mu-blog-social">

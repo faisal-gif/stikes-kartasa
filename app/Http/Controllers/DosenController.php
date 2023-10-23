@@ -2,17 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\dosen;
+use App\Models\Dosen;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class DosenController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $data = Dosen::latest()->get();
+        return view('admin.dosen.index', compact('data'));
     }
 
     /**
@@ -20,7 +26,7 @@ class DosenController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.dosen.create');
     }
 
     /**
@@ -28,38 +34,76 @@ class DosenController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'img' => 'max:500000',
+            'nama' => 'required',
+            'nip' => 'required',
+        ]);
+        $file = $request->file('img');
+        $nama_file = time() . "_" . $file->getClientOriginalName();
+        $file->move('image_dosen', $nama_file);
+        Dosen::create([
+            'img' => $nama_file,
+            'nama' => $request->nama,
+            'nip' => $request->nip,
+            'linkedln' => $request->linkedln,
+            'facebook' => $request->facebook,
+            'twiter' => $request->twiter,
+
+        ]);
+        return redirect()->route('dosen.index')->with('success', 'Data Berhasil Disimpan');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(dosen $dosen)
+    public function show(Dosen $dosen)
     {
-        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(dosen $dosen)
+    public function edit(Dosen $dosen)
     {
-        //
+        return view('admin.dosen.edit', compact('dosen'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, dosen $dosen)
+    public function update(Request $request, Dosen $dosen)
     {
-        //
+        $validatedData = $request->validate([
+            'img' => 'max:500000',
+            'nama' => 'required',
+            'nip' => 'required',
+        ]);
+
+        $file = $request->file('img');
+        if ($file != null) {
+            File::delete('image_dosen/' . $dosen->img);
+            $nama_file = time() . "_" . $file->getClientOriginalName();
+            $file->move('image_dosen', $nama_file);
+            $dosen->img = $nama_file;
+        }
+        $dosen->nama = $request->nama;
+        $dosen->nip = $request->nip;
+        $dosen->linkedln = $request->linkedln;
+        $dosen->facebook = $request->facebook;
+        $dosen->twiter = $request->twiter;
+        $dosen->save();
+        return redirect()->route('dosen.index')->with('success', 'Data Berhasil Diupdate');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(dosen $dosen)
+    public function destroy(Dosen $dosen)
     {
-        //
+        File::delete('image_dosen/' . $dosen->img);
+        $dosen->delete();
+
+        return redirect()->route('dosen.index')->with('success', 'Data Berhasil Dihapus');
     }
 }

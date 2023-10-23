@@ -1,0 +1,64 @@
+@extends('layouts.admin')
+@section('css')
+<style>
+    #lampiran {
+        width: 750px;
+        height: 500px;
+        object-fit: cover;
+    }
+</style>
+@endsection
+@section('content')
+<div class="col-12">
+    <div class="white-box">
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+        <h3 class="box-title">Edit Berita</h3>
+        <form method="post" action="{{route('prestasi.update',$prestasi)}}" enctype="multipart/form-data">
+            {{ csrf_field() }}
+            {{ method_field('PATCH') }}
+           
+            <div class="form-group">
+                <label>Nama Prestasi*</label>
+                <input type="text" class="form-control" name="nama" required="required" value="{{$prestasi->nama}}">
+            </div>
+            <div class="form-group">
+                <label>Keteranagan</label>
+                <textarea rows="10" class="form-control" name="keterangan">{{$prestasi->keterangan}}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Lampiran</label>
+                <input type="file" class="form-control" name="lampiran" accept="image/*" onchange="showPreview(event);">
+            </div>
+            <div class="form-group">
+                <div class="preview">
+                    <img id="lampiran" src="{{asset('lampiran/'.$prestasi->lampiran)}}">
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+@endsection
+@section('script')
+<script>
+    function showPreview(event) {
+        if (event.target.files.length > 0) {
+            var src = URL.createObjectURL(event.target.files[0]);
+            var preview = document.getElementById("lampiran");
+            preview.src = src;
+            preview.style.display = "block";
+        }
+    }
+</script>
+
+@endsection

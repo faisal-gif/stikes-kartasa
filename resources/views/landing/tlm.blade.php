@@ -7,10 +7,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="mu-page-breadcrumb-area">
-                    <h2>Berita</h2>
+                    <h2>Teknologi Laboratorium Medis (TLM)</h2>
                     <ol class="breadcrumb">
                         <li><a href="/">Beranda</a></li>
-                        <li class="active">Berita</li>
+                        <li class="active">Teknologi Laboratorium Medis (TLM)</li>
                     </ol>
                 </div>
             </div>
@@ -31,18 +31,27 @@
                                     <div class="col-md-12">
                                         <article class="mu-blog-single-item">
                                             <figure class="mu-blog-single-img">
-                                                <a href="#"><img alt="img" src="{{asset('image/'.$data->cover)}}"></a>
+                                                <a href="#"><img alt="img" src="{{ asset('img-landing/tlm.jpg') }}"></a>
                                                 <figcaption class="mu-blog-caption">
-                                                    <h3><a href="#">{{$data->judul}}</a></h3>
+                                                    <h3><a href="#">Teknologi Laboratorium Medis (TLM)</a></h3>
                                                 </figcaption>
                                             </figure>
                                             <div class="mu-blog-meta">
                                                 <a href="#">By Admin</a>
-                                                <a href="#">{{date('d mm Y', strtotime($data->created_at))}}</a>
-                                                
+                                                <a href="#"></a>
+
                                             </div>
                                             <div class="mu-blog-description">
-                                            {!! $data->isi !!}
+                                                Jurusan Teknologi Laboratorium Medis (TLM) atau Analisis Kesehatan merupakan salah satu jurusan di bidang ilmu kesehatan yang berkecimpung pada pengelolaan dalam pemeriksaan laboratorium.
+                                                <br>
+                                                Saat berkunjung ke laboratorium medis maupun rumah sakit, kalian akan menemukan profesi laboran atau tenaga laboratorium. Juga dikenal sebagai analis kesehatan. Mereka merupakan lulusan dari Jurusan Teknologi Laboratorium Medis.
+                                                <br>
+                                                Apakah kalian berminat menjadi seorang laboran? Sebelum itu, tentunya kalian harus mengenal Jurusan TLM secara detail. Apa saja yang dipelajari selama kuliah Jurusan TLM? Berapa lama kuliah yang dibutuhkan? Pertanyaan-pertanyaan tersebut akan terjawab dalam ulasan berikut ini.
+                                                <br>
+                                                <h4>Apa Saja yang Dipelajari Mahasiswa Prodi TLM?</h4>
+                                                Mahasiswa TLM mempelajari tentang tata cara menjadi seorang tenaga kesehatan yang bertugas memberikan pelayanan, pemeriksaan, pengukuran, penetapan, dan pengujian terhadap bahan yang berasal dari manusia maupun lainnya. Tujuannya adalah mengetahui jenis, penyebab penyakit, kondisi kesehatan, serta faktor yang mempengaruhi kesehatan seseorang maupun masyarakat luas.
+                                                <br>
+                                                Analis kesehatan bertugas untuk menunjang diagnosa yang ditentukan oleh dokter dan tenaga kesehatan lainnya. Selama kuliah Prodi TLM, mahasiswa akan mempelajari teknik pengambilan darah. Selanjutnya, mereka melakukan pengamatan dan pemeriksaan di laboratorium. Juga mempelajari cara pemeriksaan darah, urin, bakteri, dan parasit yang terdapat dalam tubuh manusia.
                                             </div>
                                             <!-- start blog social share -->
                                             <div class="mu-blog-social">
