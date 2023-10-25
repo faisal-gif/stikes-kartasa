@@ -4,7 +4,7 @@
 <style>
     #foto {
         width: 260px;
-        height: 265px;
+        height: 260px;
         object-fit: cover;
     }
 </style>
@@ -40,8 +40,7 @@
                                             </div>
                                         </figure>
                                         <div class="mu-ourteacher-single-content">
-                                            <h4>{{$dosen->nama}}</h4>
-                                            <p></p>
+                                            <h5>{{$dosen->nama}}</h5>
                                         </div>
                                     </div>
                                 </div>

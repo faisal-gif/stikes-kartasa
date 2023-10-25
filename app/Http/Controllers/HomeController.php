@@ -66,7 +66,7 @@ class HomeController extends Controller
     }
     public function prestasi()
     {
-        $data=Dosen::latest()->get();
+        $data=Prestasi::latest()->get();
         return view('prestasi',compact('data'));
     }
     public function detailPrestasi($id)

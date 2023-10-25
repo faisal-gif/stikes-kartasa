@@ -111,7 +111,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/vis-misi">Visi dan Misi</a></li>
-                                <li><a href="#mu-latest-courses">Prodi</a></li>
+                                <li><a href="/#mu-latest-courses">Prodi</a></li>
                                 <li><a href="/prestasi">Prestasi</a></li>
                             </ul>
                         </li>
