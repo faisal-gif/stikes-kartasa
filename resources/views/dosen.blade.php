@@ -21,7 +21,7 @@
                     <div class="mu-our-teacher-area">
                         <!-- begain title -->
                         <div class="mu-title">
-                            <h2>Dosen Pengajar</h2>
+                            <h2>{{$title}}</h2>
                         </div>
                         <!-- end title -->
                         <!-- begain our teacher content -->
