@@ -52,6 +52,20 @@
                                                 Mahasiswa TLM mempelajari tentang tata cara menjadi seorang tenaga kesehatan yang bertugas memberikan pelayanan, pemeriksaan, pengukuran, penetapan, dan pengujian terhadap bahan yang berasal dari manusia maupun lainnya. Tujuannya adalah mengetahui jenis, penyebab penyakit, kondisi kesehatan, serta faktor yang mempengaruhi kesehatan seseorang maupun masyarakat luas.
                                                 <br>
                                                 Analis kesehatan bertugas untuk menunjang diagnosa yang ditentukan oleh dokter dan tenaga kesehatan lainnya. Selama kuliah Prodi TLM, mahasiswa akan mempelajari teknik pengambilan darah. Selanjutnya, mereka melakukan pengamatan dan pemeriksaan di laboratorium. Juga mempelajari cara pemeriksaan darah, urin, bakteri, dan parasit yang terdapat dalam tubuh manusia.
+                                                <br>
+                                                <br>
+                                                <h4>VISI</h4>
+                                                <blockquote>
+                                                    <p>“Menghasilkan tenaga teknis pemeriksaan laboratorium yang berkualitas baik, memiliki kelebihan dalam bidang diagnosa laboratorium penyakit tropis serta mampu bersaing dalam skala nasional”</p>
+                                                </blockquote>
+                                                <h4>MISI</h4>
+
+                                                <ul>
+                                                    <li>Menyelenggarakan pendidikan bidang Analis Kesehatan sesuai standar nasional pendidikan tinggi yang dinamis dan sensitif terhadap dinamika pembangunan kesehatan di Indonesia terutama bidang laboratorium kesehatan</li>
+                                                    <li>Melaksanakan penellitian bidang laboratorium kesehatan masyarakat Indonesia, terutama tentang pengembangan diagnosa laboratorium penyakit tropis</li>
+                                                    <li>Berkomitmen terhadap pembangunan kesehatan secara keilmuan maupun aplikatif melalui pengabdian masyarakat baik dalam bentuk penyuluhan, stimulasi, maupun pemberdayaan masyarakat, terutama bidang laboratorium kesehatan</li>
+
+                                                </ul>
                                             </div>
                                             <!-- start blog social share -->
                                             <div class="mu-blog-social">

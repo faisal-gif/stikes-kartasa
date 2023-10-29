@@ -234,8 +234,8 @@
                     </div>
                     <!-- End Title -->
                     <!-- Start latest course content -->
-                    <div id="mu-latest-course-slide" class="mu-latest-courses-content">
-                        <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="mu-latest-courses-content">
+                        <div class="col-lg-6 col-md-4 col-xs-12">
                             <div class="mu-latest-course-single">
                                 <figure class="mu-latest-course-img">
                                     <a href="#"><img src="{{ asset('img-landing/farmasi.jpeg') }}" alt="img"></a>
@@ -253,7 +253,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-xs-12">
+                        
+                        <div class="col-lg-6 col-md-4 col-xs-12">
                             <div class="mu-latest-course-single">
                                 <figure class="mu-latest-course-img">
                                     <a href="#"><img src="{{ asset('img-landing/tlm.jpg') }}" alt="img"></a>
@@ -271,25 +272,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-4 col-xs-12">
-                            <div class="mu-latest-course-single">
-                                <figure class="mu-latest-course-img">
-                                    <a href="#"><img src="{{ asset('img-landing/kebidanan.jpeg') }}" alt="img"></a>
-                                    <figcaption class="mu-latest-course-imgcaption">
-                                        <a href="#">Kebidanan</a>
-                                    </figcaption>
-                                </figure>
-                                <div class="mu-latest-course-single-content">
-                                    <h4><a href="#">D3 Kebidanan</a></h4>
-                                    <p>Jurusan KEBIDANAN adalah satu bidang ilmu yang mernpelajari keilmuan yang mempersiapkan kehamilan, menolong persalinan. nifas dan menyusui, masa interval dan pengaturan kesuburan, klimakterium dan menopause, bayi baru lahir dan balita, fungsi-fungsi reproduksi manusia serta memberikan bantuan/dukungan pada perempuan, keluarga.</p>
-                                    <div class="mu-latest-course-single-contbottom">
-                                        <a class="mu-course-details" href="{{route('landing.kebidanan')}}">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
+                      
 
                     </div>
                     <!-- End latest course content -->

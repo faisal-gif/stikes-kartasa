@@ -41,6 +41,20 @@
                 <input type="text" class="form-control" name="nama" required="required">
             </div>
             <div class="form-group">
+                <label>Pendidikan*</label>
+               <select name="pendidikan" id="" class="form-control">
+                <option value="s2">S2</option>
+                <option value="tenaga_pendidik">Tenaga Pendidik</option>
+               </select>
+            </div>
+            <div class="form-group">
+                <label>Pendidikan*</label>
+               <select name="jurusan" id="" class="form-control">
+                <option value="farmasi" >Farmasi</option>
+                <option value="tlm" >Teknologi Laboratorium Medis</option>
+               </select>
+            </div>
+            <div class="form-group">
                 <label>Linkedln</label>
                 <input type="text" class="form-control" name="linkedln" >
             </div>

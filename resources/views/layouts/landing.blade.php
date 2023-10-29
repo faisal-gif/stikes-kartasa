@@ -131,7 +131,14 @@
                                 <li><a href="http://siakad.stikes-kartrasa.ac.id/tracer/">Tracer Study</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{route('landing.dosen')}}">Dosen</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{route('landing.dosen-farmasi')}}">Dosen Farmasi</a></li>
+                                <li><a href="{{route('landing.dosen-tlm')}}">Dosen Teknologi Laboratorium Medis </a></li>
+                                <li><a href="{{route('landing.tenaga-pendidik')}}">Tenaga Pendidik</a></li>
+                            </ul>
+                        </li>
                         @guest
                         @if (Route::has('login'))
                         <li><a href="{{route('login')}}">Login</a></li>

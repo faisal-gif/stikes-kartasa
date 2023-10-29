@@ -42,6 +42,21 @@
                 <input type="text" class="form-control" name="nama" value="{{$dosen->nama}}" required="required">
             </div>
             <div class="form-group">
+                <label>Status*</label>
+               <select name="pendidikan" id="" class="form-control">
+                <option value="s2" {{$dosen->pendidikan == "s2" ? "selected" : "" }}>S2</option>
+                <option value="tenaga_pendidik" {{$dosen->pendidikan == "tenaga_pendidik" ? "selected" : "" }}>Tenaga Pendidik</option>
+               </select>
+            </div>
+            <div class="form-group">
+                <label>Jurusan*</label>
+               <select name="jurusan" id="" class="form-control">
+                <option value="">-</option>
+                <option value="farmasi" {{$dosen->jurusan == "farmasi" ? "selected" : "" }}>Farmasi</option>
+                <option value="tlm" {{$dosen->jurusan == "tlm" ? "selected" : "" }}>Teknologi Laboratorium Medis</option>
+               </select>
+            </div>
+            <div class="form-group">
                 <label>Linkedln</label>
                 <input type="text" class="form-control" name="linkedln" value="{{$dosen->linkedln}}">
             </div>

@@ -59,10 +59,23 @@ class HomeController extends Controller
         $data=News::find($id);
         return view('landing.detailBerita',compact('data'));
     }
-    public function dosen()
+    public function dosen_farmasi()
     {
-        $data=Dosen::latest()->get();
-        return view('dosen',compact('data'));
+        $data=Dosen::where('jurusan','farmasi')->latest()->get();
+        $title='Farmasi';
+        return view('dosen',compact('data','title'));
+    }
+    public function dosen_tlm()
+    {
+        $data=Dosen::where('jurusan','tlm')->latest()->get();
+        $title='Teknologi Laboratorium Medis';
+        return view('dosen',compact('data','title'));
+    }
+    public function tenaga_pendidik()
+    {
+        $data=Dosen::where('pendidikan','tenaga_pendidik')->latest()->get();
+        $title='Tenaga Pendidik';
+        return view('dosen',compact('data','title'));
     }
     public function prestasi()
     {

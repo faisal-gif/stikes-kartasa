@@ -51,6 +51,21 @@
                                                 <br>
                                                 <h4>Apa yang Dipelajari di Jurusan Farmasi?</h4>
                                                 Sebelum membahas mata kuliah di Jurusan Farmasi, kita perlu memahami dulu nih bahwa yang dipelajari di jurusan ini nggak melulu soal memformulasikan obat. Ada juga formulasi terhadap zat-zat senyawa tertentu untuk membuat makanan, minuman, bahkan kosmetik. Dengan begitu, kamu yang mau masuk Jurusan Farmasi nggak cuma harus tertarik pada Ilmu Kesehatan dan Biologi, tetapi juga Kimia, ya.
+                                                <br>
+                                                <br>
+                                                <h4>VISI</h4>
+                                                <blockquote>
+                                                    <p>“Menjadi Program Studi Farmasi yang berkualitas dalam pelayanan kesehatan dan berjiwa enterpreneur dibidang obat tradisional serta mampu bersaing dalam skala nasional”</p>
+                                                </blockquote>
+                                                <h4>MISI</h4>
+
+                                                <ul>
+                                                    <li>Menyelenggarakan pendidikan bidang kefarmasian sesuai standar nasional pendidikan tinggi yang dinamis dan sensitif terhadap dinamika pembangunan kesehatan di Indonesia terutama pengembangan bidang kefarmasian</li>
+                                                    <li>Menghasilkan penelitian bidang kefarmasian yang memberi kontribusi positif pada pembangunan kesehatan masyarakat Indonesia, terutama tentang pengembangan teknologi obat tradisional</li>
+                                                    <li>Berkomitmen terhadap pembangunan kesehatan secara keilmuan maupun aplikatif melalui pengabdian masyarakat baik dalam bentuk penyuluhan, pelayanan, stimulasi, maupun pemberdayaan masyarakat terutama bidang kefarmasian</li>
+
+                                                </ul>
+
                                             </div>
                                             <!-- start blog social share -->
                                             <div class="mu-blog-social">

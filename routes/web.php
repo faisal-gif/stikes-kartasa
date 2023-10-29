@@ -20,7 +20,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class,'welcome'])->name('welcome');
 Route::get('/berita/{id}/detail', [HomeController::class,'berita'])->name('landing.berita');
-Route::get('/dosen', [HomeController::class,'dosen'])->name('landing.dosen');
+Route::get('/dosen/farmasi', [HomeController::class,'dosen_farmasi'])->name('landing.dosen-farmasi');
+Route::get('/dosen/tlm', [HomeController::class,'dosen_tlm'])->name('landing.dosen-tlm');
+Route::get('/tenaga_pendidik', [HomeController::class,'tenaga_pendidik'])->name('landing.tenaga-pendidik');
 Route::get('/prestasi', [HomeController::class,'prestasi'])->name('landing.prestasi');
 Route::get('/prestasi/{id}/detail', [HomeController::class,'detailPrestasi'])->name('landing.detailPrestasi');
 Route::get('/kalender-akademik', [HomeController::class,'kalender_akademik'])->name('landing.kalender-akademik');

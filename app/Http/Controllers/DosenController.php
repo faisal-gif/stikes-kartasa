@@ -46,6 +46,8 @@ class DosenController extends Controller
             'img' => $nama_file,
             'nama' => $request->nama,
             'nip' => $request->nip,
+            'pendidikan' => $request->pendidikan,
+            'jurusan' => $request->jurusan,
             'linkedln' => $request->linkedln,
             'facebook' => $request->facebook,
             'twiter' => $request->twiter,
@@ -89,6 +91,8 @@ class DosenController extends Controller
         }
         $dosen->nama = $request->nama;
         $dosen->nip = $request->nip;
+        $dosen->pendidikan = $request->pendidikan;
+        $dosen->jurusan = $request->jurusan;
         $dosen->linkedln = $request->linkedln;
         $dosen->facebook = $request->facebook;
         $dosen->twiter = $request->twiter;
