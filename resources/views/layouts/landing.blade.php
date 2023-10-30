@@ -195,11 +195,10 @@
                             <div class="mu-footer-widget">
                                 <h4>Information</h4>
                                 <ul>
-                                    <li><a href="#">Profil</a></li>
-                                    <li><a href="">Fasilitas</a></li>
-                                    <li><a href="">Prodi</a></li>
-                                    <li><a href="">Pendaftaran</a></li>
-                                    <li><a href="">Map</a></li>
+                                    <li><a href="/#mu-about-us">Profil</a></li>
+                                    <li><a href="/#mu-service">Fasilitas</a></li>
+                                    <li><a href="/#mu-features">Prodi</a></li>
+                                    <li><a href="http://siakad.stikes-kartrasa.ac.id/pmb">Pendaftaran</a></li>
 
                                 </ul>
                             </div>
@@ -209,9 +208,9 @@
                                 <h4>Student Help</h4>
                                 <ul>
 
-                                    <li><a href="#">Siakad</a></li>
-                                    <li><a href="">Kalender Akademik</a></li>
-                                    <li><a href="">Karir</a></li>
+                                    <li><a href="http://siakad.stikes-kartrasa.ac.id">Siakad</a></li>
+                                    <li><a href="/kalender-akademik">Kalender Akademik</a></li>
+                                    <li><a href="http://siakad.stikes-kartrasa.ac.id/tracer/">Karir</a></li>
 
                                 </ul>
                             </div>

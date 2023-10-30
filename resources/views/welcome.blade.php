@@ -49,6 +49,38 @@
         </div>
     </div>
     <!-- Start single slider item -->
+    <div class="mu-slider-single">
+        <div class="mu-slider-img">
+            <figure>
+                <img src="{{asset('asset-kampus/IMG-20231030-WA0009.jpg')}}" alt="img">
+            </figure>
+        </div>
+        <div class="mu-slider-content">
+
+        </div>
+    </div>
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+        <div class="mu-slider-img">
+            <figure>
+                <img src="{{asset('asset-kampus/IMG-20231030-WA0010.jpg')}}" alt="img">
+            </figure>
+        </div>
+        <div class="mu-slider-content">
+
+        </div>
+    </div>
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+        <div class="mu-slider-img">
+            <figure>
+                <img src="{{asset('asset-kampus/IMG-20231030-WA0011.jpg')}}" alt="img">
+            </figure>
+        </div>
+        <div class="mu-slider-content">
+
+        </div>
+    </div>
 
 </section>
 <!-- End Slider -->
