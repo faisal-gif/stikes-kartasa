@@ -70,8 +70,8 @@
                                 <div class="mu-header-top-right">
                                     <nav>
                                         <ul class="mu-top-social-nav">
-                                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                            <li><a href="https://www.facebook.com/Stikeskpb/"><span class="fa fa-facebook"></span></a></li>
+                                            <li><a href="https://twitter.com/stikeskpbta"><span class="fa fa-twitter"></span></a></li>
                                             <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                                             <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                                             <li><a href="https://www.youtube.com/@stikeskaryaputrabangsa-tul3588"><span class="fa fa-youtube"></span></a></li>
@@ -231,8 +231,8 @@
                                 <h4>Contact</h4>
                                 <address>
                                     <p>Jalan Raya Tulungagung-Blitar,Kec. Sumbergempol, Kabupaten Tulungagung, Jawa Timur 66291</p>
-                                    <p>Phone: (415) 453-1568 </p>
-                                    <p>Email: info@markups.io</p>
+                                    <p>Phone: (0355) 331080 </p>
+                                    <p>Email: karyaputrabangsa@stikes-kartrasa.ac.id</p>
                                 </address>
                             </div>
                         </div>
