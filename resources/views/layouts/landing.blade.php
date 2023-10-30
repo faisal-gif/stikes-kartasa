@@ -58,11 +58,11 @@
                                 <div class="mu-header-top-left">
                                     <div class="mu-top-email">
                                         <i class="fa fa-envelope"></i>
-                                        <span>info@markups.io</span>
+                                        <span>karyaputrabangsa@stikes-kartrasa.ac.id</span>
                                     </div>
                                     <div class="mu-top-phone">
                                         <i class="fa fa-phone"></i>
-                                        <span>(568) 986 652</span>
+                                        <span>(0355) 331080</span>
                                     </div>
                                 </div>
                             </div>
@@ -74,7 +74,8 @@
                                             <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                                             <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                                             <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                                            <li><a href="https://www.youtube.com/@stikeskaryaputrabangsa-tul3588"><span class="fa fa-youtube"></span></a></li>
+                                            <li><a href="https://www.instagram.com/stikes_kartrasa/"><span class="fa fa-instagram"></span></a></li>
                                         </ul>
                                     </nav>
                                 </div>
