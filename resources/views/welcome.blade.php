@@ -177,7 +177,7 @@
                         <div class="col-lg-3 col-md-3 col-sm-3">
                             <div class="mu-abtus-counter-single">
                                 <span class="fa fa-users"></span>
-                                <h4 class="counter">475</h4>
+                                <h4 class="counter">127</h4>
                                 <p>Mahasiswa</p>
                             </div>
                         </div>
