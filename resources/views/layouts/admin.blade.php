@@ -160,6 +160,13 @@
                                 <span class="hide-menu">Prestasi</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('navbar.index')}}"
+                                aria-expanded="false">
+                                <i class="fa fa-edit" aria-hidden="true"></i>
+                                <span class="hide-menu">Navbar</span>
+                            </a>
+                        </li>
 
 
 

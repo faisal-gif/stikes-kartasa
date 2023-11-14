@@ -36,6 +36,29 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        .dropdown-menu li {
+            position: relative;
+        }
+
+        .dropdown-menu .dropdown-submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+
+        .dropdown-menu .dropdown-submenu-left {
+            right: 100%;
+            left: auto;
+        }
+
+        .dropdown-menu>li:hover>.dropdown-submenu {
+            display: block;
+        }
+    </style>
+
     @yield('css')
 </head>
 
@@ -101,14 +124,16 @@
                     </button>
                     <!-- LOGO -->
                     <!-- TEXT BASED LOGO -->
-                    <a class="navbar-brand" href="/"><i><img src="{{ asset('template-landing/assets/img/favicon.png')}}" alt="" srcset=""></i><span>STIKES Karya Putra Bangsa</span></a>
+                    <a class="navbar-brand" href="/" style="font-size: 20px;">
+                        <i><img src="{{ asset('template-landing/assets/img/favicon.png')}}" alt="" srcset=""></i>
+                        <span >STIKES Karya Putra Bangsa</span></a>
                     <!-- IMG BASED LOGO  -->
                     <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                    <ul id="top-menu" class="nav navbar-nav navbar-right main-nav" style="font-size: 12px;">
                         <li class="active"><a href="/">Beranda</a></li>
-                        <li class="dropdown">
+                        <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/vis-misi">Visi dan Misi</a></li>
@@ -116,7 +141,7 @@
                                 <li><a href="/prestasi">Prestasi</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/kalender-akademik">Kalender Akademik</a></li>
@@ -124,7 +149,7 @@
                                 <li><a href="http://siakad.stikes-kartrasa.ac.id/pmb">Penerimaan Mahasiswa Baru</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sistem Informasi</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="http://siakad.stikes-kartrasa.ac.id/">Siakad</a></li>
@@ -132,7 +157,7 @@
                                 <li><a href="http://siakad.stikes-kartrasa.ac.id/tracer/">Tracer Study</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="{{route('landing.dosen-farmasi')}}">Dosen Farmasi</a></li>
@@ -140,12 +165,38 @@
                                 <li><a href="{{route('landing.tenaga-pendidik')}}">Tenaga Pendidik</a></li>
                             </ul>
                         </li>
+
+                        @foreach(\App\Models\Navbar::with('menu.sub_menu')->get() as $navbar)
+                        <li>
+                            @if($navbar->type === 'url')
+                            <a href="{{$navbar->url}}">{{$navbar->nama}}</a>
+                            @else
+                            <a href="{{$navbar->url}}" class="dropdown-toggle" data-toggle="dropdown">{{$navbar->nama}}</a>
+                            @endif
+                            @if($navbar->type === 'menu')
+                            <ul class="dropdown-menu" role="menu">
+                                @foreach($navbar->menu as $menu)
+                                <li><a href="{{$menu->url}}">{{$menu->nama}}</a>
+                                    @if($menu->type === 'sub_menu')
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        @foreach($menu->sub_menu as $sub_menu)
+                                        <li><a href="{{$sub_menu->url}}">{{$sub_menu->nama}}</a></li>
+                                        @endforeach
+                                    </ul>
+                                    @endif
+                                </li>
+                                @endforeach
+                            </ul>
+                            @endif
+                        </li>
+                        @endforeach
+
                         @guest
                         @if (Route::has('login'))
                         <li><a href="{{route('login')}}">Login</a></li>
                         @endif
                         @else
-                        <li class="dropdown">
+                        <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{ Auth::user()->name }}</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li> <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
